@@ -18,13 +18,13 @@ scale = Vector2( 0.954946, 1.01844 )
 texture = ExtResource( 2 )
 
 [node name="Paddle" parent="." instance=ExtResource( 3 )]
+position = Vector2( 465.831, 537.596 )
 
 [node name="Ball" parent="." instance=ExtResource( 4 )]
 
 [node name="StaticBody2D" parent="." instance=ExtResource( 5 )]
 
 [node name="Tiles" type="Node" parent="."]
-editor/display_folded = true
 
 [node name="Blue Tiles" type="Node" parent="Tiles"]
 

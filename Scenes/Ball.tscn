@@ -21,7 +21,7 @@ flag_disable_z = true
 angular_velocity = 10.3125
 orbit_velocity = 0.0
 orbit_velocity_random = 0.0
-scale = 9.0
+scale = 19.0
 scale_curve = SubResource( 4 )
 color = Color( 0.898039, 0.101961, 0.054902, 1 )
 
@@ -48,7 +48,3 @@ shape = SubResource( 2 )
 amount = 55
 local_coords = false
 process_material = SubResource( 5 )
-
-[node name="Camera2D" type="Camera2D" parent="."]
-current = true
-smoothing_enabled = true

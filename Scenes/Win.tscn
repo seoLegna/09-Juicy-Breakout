@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Assets/OstrichSansInline-Regular.otf" type="DynamicFontData" id=1]
-[ext_resource path="res://Scripts/button.gd" type="Script" id=2]
+[ext_resource path="res://Scenes/Button.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scripts/next.gd" type="Script" id=3]
 
 [sub_resource type="DynamicFont" id=1]
 size = 55
@@ -16,14 +17,17 @@ font_data = ExtResource( 1 )
 [node name="Message" type="Node2D" parent="."]
 
 [node name="ColorRect" type="ColorRect" parent="Message"]
-margin_right = 1024.0
-margin_bottom = 608.0
+margin_left = -0.0758057
+margin_top = 3.0
+margin_right = 1023.92
+margin_bottom = 602.0
 color = Color( 0.105882, 0.807843, 0.658824, 1 )
 
 [node name="Label" type="Label" parent="Message"]
-margin_top = 96.0
-margin_right = 1024.0
-margin_bottom = 320.0
+margin_left = 3.07581
+margin_top = 3.72583
+margin_right = 1027.08
+margin_bottom = 227.726
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "You Win!"
@@ -32,12 +36,18 @@ valign = 1
 
 [node name="Button" type="Node2D" parent="."]
 
-[node name="Button" type="Button" parent="Button"]
-margin_left = 320.0
-margin_top = 352.0
-margin_right = 736.0
-margin_bottom = 480.0
+[node name="Button" parent="Button" instance=ExtResource( 2 )]
+margin_left = 67.3645
+margin_top = 284.076
+margin_right = 378.365
+margin_bottom = 412.076
+
+[node name="Second" type="Button" parent="Button"]
+margin_left = 621.635
+margin_top = 280.0
+margin_right = 935.635
+margin_bottom = 420.0
 custom_fonts/font = SubResource( 2 )
 toggle_mode = true
-text = "Play Again"
-script = ExtResource( 2 )
+text = "Next Stage"
+script = ExtResource( 3 )

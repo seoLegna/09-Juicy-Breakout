@@ -11,6 +11,9 @@ func _ready():
  var GameNode = get_node("/root/Game")
  connect("score", GameNode, "increase_score")
  connect("lives", GameNode, "decrease_lives")
+ var SecondNode = get_node("/root/Second")
+ connect("score", SecondNode, "increase_score")
+ connect("lives", SecondNode, "decrease_lives")
 
 func _physics_process(delta):
  var bodies = get_colliding_bodies()
