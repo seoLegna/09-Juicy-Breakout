@@ -10,6 +10,6 @@ I think I did a 'ok' job with this game,
 it could have been so much better.
 
 The camera movement is intentional and so is the 
-hike in difficulty due to it (the camera moves thus dis aligning the cursor and the paddle.).
+hike in difficulty due to it (the camera moves thus dis-aligning the cursor and the paddle.).
 
 Thank you.
