@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Scripts/stage2.gd" type="Script" id=1]
 [ext_resource path="res://Assets/fiya.jpg" type="Texture" id=2]
@@ -9,13 +9,14 @@
 [ext_resource path="res://Scenes/Score.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Scenes/Lives.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Scenes/Brick.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Assets/Central City.ogg" type="AudioStream" id=10]
 
 [node name="Second" type="Node"]
 script = ExtResource( 1 )
 
 [node name="Background" type="Sprite" parent="."]
-position = Vector2( 519.735, 274.352 )
-scale = Vector2( 2.60287, 2.29934 )
+position = Vector2( 491.207, 380.751 )
+scale = Vector2( 5.18827, 4.61061 )
 texture = ExtResource( 2 )
 
 [node name="Paddle" parent="." instance=ExtResource( 3 )]
@@ -161,3 +162,7 @@ position = Vector2( 537.393, 410.779 )
 
 [node name="Brick5" parent="Bricks" instance=ExtResource( 9 )]
 position = Vector2( 404.149, 413.554 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
+autoplay = true
